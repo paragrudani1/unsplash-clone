@@ -1,0 +1,120 @@
+.img_container {
+  position: relative;
+  width: 20%;
+  height: 400px;
+  margin: 30px;
+  overflow: hidden;
+}
+
+.img_container  .photo {
+  border-radius: 1%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  cursor: zoom-in;
+  }
+  
+  .img_container:hover .photo {
+    -webkit-box-shadow:  7px 8px 20px 0px rgba(0,0,0,0.12);
+      -moz-box-shadow:  7px 8px 20px 0px rgba(0,0,0,0.12);
+      box-shadow:  7px 8px 20px 0px rgba(0,0,0,0.62);
+      transform: scale(1.02);
+      filter: brightness(.7)
+    }
+
+    /* .img_content_hover {
+      position: absolute;
+      z-index: 11;
+      white-space: nowrap;
+      display: none;
+      padding: 1rem;
+      background: white;
+      font-weight: 400;
+      margin-top: 1.25rem;
+      margin-left: -2rem;
+    }
+    .title {
+      color: black;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .img_container:hover .img_content_hover {
+      display: block;
+    } */
+
+    .user {
+      position: absolute;
+      display: flex;
+      margin: 12px;
+      opacity: 0;
+      transition: .5s ease-in-out;
+    }
+    
+    .user > img {
+      border-radius: 50%;
+      width: 22%;
+      cursor: none;
+    }
+
+    .img_container:hover .user {
+      opacity: 1;
+      z-index: 11;
+    }
+     .user > img:hover {
+      -webkit-box-shadow:  7px 8px 30px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow:  7px 8px 30px 0px rgba(0,0,0,0.5);
+      box-shadow:  7px 8px 30px 0px rgba(0,0,0,0.5);
+    }
+
+    .user .userName a {
+      color: rgb(209, 205, 205);
+      font-size: 18px;
+      align-self: center;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: .2s ease-out;
+    }
+
+    .user .userName a:hover {
+      color: white;
+    }
+
+    .downloadBtn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 20px;
+      background-color: white;
+      padding: 12px;
+      border-radius: 50%;
+      opacity: 0;
+      transition: .5s ease;
+      cursor: pointer;
+    }
+
+    .downloadBtn img {
+      width: 30px;
+    }
+
+    .img_container:hover .downloadBtn {
+      opacity: 1;
+    }
+
+    .downloadBtn:hover {
+      -webkit-box-shadow:  7px 8px 30px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow:  7px 8px 30px 0px rgba(0,0,0,0.5);
+      box-shadow:  7px 8px 30px 0px rgba(0,0,0,0.5);
+    }
+
+    @media (max-width: 1300px) {
+      .img_container {
+        width: 28%;
+        height: 450px;
+      }
+    }
+
+    .user {
+      margin: 18px;
+    }

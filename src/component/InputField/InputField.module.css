@@ -1,0 +1,50 @@
+.Input_container {
+    position: relative;
+    height: 450px;
+    padding-left: 100px;
+    background-color: transparent;
+}
+form {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.Input {
+    width: 400px;
+}
+.Input_container h1 {
+    width: 550px;
+    text-align: left;
+    color: white;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.Input input {
+    width: 100%;
+    height: 35px;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+}
+
+.Input button {
+    /* display: flex; */
+    margin-left: 0;
+    margin-top: 20px;
+    border: 1px solid white;
+    color: white;
+    letter-spacing: 1px;
+    width: 40%;
+    height: 35px;
+    font-size: 17px;
+    background-color: transparent;
+}
+
+.Input button:disabled {
+    color: rgb(151, 147, 147);
+}

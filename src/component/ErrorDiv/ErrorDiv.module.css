@@ -1,0 +1,22 @@
+.ErrorDiv {
+    height: 400px;
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 100px;
+    border-radius: 3%;
+  }
+  
+  .ErrorDiv code {
+    text-align: center;
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .ErrorDiv img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 50px;
+  }
